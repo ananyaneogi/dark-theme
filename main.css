@@ -1,0 +1,107 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    filter: saturate(1.5);
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 360px;
+    padding: 30px;
+    z-index: 2;
+}
+
+nav a {
+    font-size: 1em;
+    color: #333;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+.content-container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-content {
+    width: 60%;
+    background-color: lavender;
+}
+
+.info-content {
+    position: relative;
+    width: 40%;
+    padding-left: 60px;
+}
+
+.info-content h1 {
+    position: relative;
+    margin-top: 20%;
+    left: -28%;
+    margin-bottom: 60px;
+    font-size: 5.5em;
+    mix-blend-mode: hard-light;
+}
+
+p {
+    max-width: 75%;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.btn {
+    display: inline-block;
+    width: auto;
+    background: #248e16;
+    padding: 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    filter: saturate(0.5);
+}
+
+/* Dark theme modifications */
+
+.dark {
+    background: #212121;
+    color: #f8f8ff;
+}
+
+.dark img {
+    filter: saturate(1.5) brightness(0.85);
+}
+
+.dark nav a{
+    color: #f8f8ff;
+}
+
+.dark nav a:hover {
+    color: #ddd;
+}
+
+.dark .btn:hover {
+    filter: saturate(1.3);
+}

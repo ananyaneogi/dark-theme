@@ -1,15 +1,12 @@
-console.log('starting...');
 if ( 'AmbientLightSensor' in window ) {
   const sensor = new AmbientLightSensor();
   sensor.onreading = () => {
     console.log('illuminance level :', sensor.illuminance);
       if(sensor.illuminance < 15) {
-            document.querySelector('body').classList.add("black");
-            document.querySelector('body').classList.remove("white");
+            document.querySelector('body').classList.add("dark");
       }
       else {
-            document.querySelector('body').classList.add("white");
-            document.querySelector('body').classList.remove("black");
+            document.querySelector('body').classList.remove("dark");
       }
   };
   sensor.onerror = (event) => {
